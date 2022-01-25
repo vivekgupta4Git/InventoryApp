@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:text="SampleProduct"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pnameofnewp"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/pquantityofnewp"
+            android:text="5"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/punitofnewp"
+            android:text="cases"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            ></TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttondelete"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:text="Remove"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            ></Button>
+    </LinearLayout>
+</RelativeLayout>

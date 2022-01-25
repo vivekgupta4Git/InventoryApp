@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">InventoryApp</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="stock_in">Stock In</string>
+    <string name="stock_out">Stock Out</string>
+    <string name="save_data">Done</string>
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+    <string name="action_delete_all_entries">Delete Entries</string>
+</resources>

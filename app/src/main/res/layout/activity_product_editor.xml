@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+
+
+    <TextView
+        android:id="@+id/productname_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="Product Name : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        ></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_editText"
+        android:layout_toRightOf="@id/productname_textview"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:text="Parle"
+        ></EditText>
+
+    <TextView
+        android:id="@+id/quantity_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productname_textview"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Quantity : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        ></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/quantiy_editText"
+        android:layout_toRightOf="@id/quantity_textview"
+        android:layout_below="@id/productname_textview"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="10dp"
+        android:text="10"
+        android:inputType="numberSigned"
+        ></EditText>
+
+    <TextView
+        android:id="@+id/Unit_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantity_textview"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Unit : "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        ></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/unit_editText"
+        android:layout_toRightOf="@id/Unit_textview"
+        android:layout_below="@id/quantiy_editText"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="10dp"
+        android:inputType="text"
+        android:text="Cs"
+        ></EditText>
+
+    <RadioGroup
+        android:layout_below="@id/Unit_textview"
+        android:id="@+id/radiogroup"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <RadioButton
+        android:id="@+id/stockin_radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock IN"
+        ></RadioButton>
+        <RadioButton
+            android:id="@+id/stockout_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stock OUT"
+            ></RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_data"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="50dp"
+        />
+
+    <TextView
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sample"
+        android:text="sample"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/Save_button"
+        ></TextView>
+</RelativeLayout>
